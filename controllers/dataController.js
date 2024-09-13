@@ -1,5 +1,5 @@
 import axios from 'axios';
-import CryptoModel from '../models/CryptoModel.js';
+import CryptoModel from '../models/cryptoModel.js';
 
 const dataController = {
   fetchCryptoData: async (req, res) => {

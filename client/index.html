@@ -407,7 +407,7 @@
                 document.getElementById('loading').style.display = 'flex';
                 document.getElementById('table-container').style.display = 'none';
 
-                const response = await fetch('http://localhost:8080/api/data');
+                const response = await fetch('https://quadb-nodejs-gnpw.onrender.com');
                 const result = await response.json();
                 const data = result.data;
 
@@ -445,6 +445,8 @@
         }
 
         window.onload = fetchData;
+
+        alert('This is a free instance, hence it will spin down with inactivity, which can delay requests by 50 seconds or more, if the request is delayed, please wait for 50s.');
     </script>
 </body>
 
